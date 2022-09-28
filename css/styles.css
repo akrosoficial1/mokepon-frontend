@@ -71,6 +71,10 @@ button {
     user-select: none;
 }
 
+.btn-arrow {
+    font-size: 25px;
+}
+
 .boton {
     padding: 0;
     margin: 5px 0;
