@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokepon | ¡El mejor juego online! Juega ahora</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <h1 class="titulos">Mokepon</h1>
+        <p id="mensaje">¡El mejor juego online! Juega ahora</p>
+    </header>
+
+    <section id="menu-principal">
+        <button class="boton" id="boton-instrucciones">Instrucciones del Juego</button><br>
+        <button class="boton" onclick="nuevaPartida()">Nueva Partida 🚀</button>
+        <button class="boton" id="jugar-online" onclick="">Jugar Online 🏆</button>
+
+        <p id="instrucciones">En mokepon podrás divertirte jugando con otras personas en línea o con un bot. Para
+            iniciar deber seleccionar un modo de juego, luego elegir tu Mokepon para luego colisionar con otro jugador e
+            iniciar
+            la batalla. ¡Selecciona ya tu modo de jugar! ¿Qué esperas para ir a la batalla?</p>
+    </section>
+
+    <section id="seleccionar-mascotas">
+
+        <h2 class="subtitulos">Elige tu mascota:</h2>
+
+        <div class="tarjetas" id="contenedor-tarjetas"></div>
+
+        <div class="botones-de-seleccion">
+            <button class="boton" onclick="reiniciarJuego()">Atrás</button>
+            <button class="boton" id="boton-mascota">Seleccionar</button>
+        </div>
+    </section>
+
+    <section id="ver-mapa">
+        <h2 class="subtitulos">Recorre el mapa con tu Mokepon</h2>
+
+        <canvas id="mapa"></canvas>
+
+        <button class="boton" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()"
+            ontouchstart="moverArriba()" onmousedown="moverArriba()" id="boton-arriba">Arriba</button>
+
+        <div id="botones-restantes">
+            <button class="boton" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="moverIzquierda()"
+                onmousedown="moverIzquierda()">Izquierda</button>
+            <button class="boton" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="moverAbajo()"
+                onmousedown="moverAbajo()">Abajo</button>
+            <button class="boton" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="moverDerecha()"
+                onmousedown="moverDerecha()">Derecha</button>
+        </div>
+
+    </section>
+
+    <section id="seleccionar-ataques">
+        <h1 class="titulos">Mokepon</h1>
+
+        <div id="icon-jugador"></div>
+        <div id="icon-enemigo"></div>
+
+        <h2 class="subtitulos">Elige tu ataque:</h2>
+
+        <div class="tarjetas-ataques" id="contenedor-ataques"></div>
+
+        <div id="mensajes">
+            <p id="parrafo-resultado">¡Que comience el juego!</p>
+
+            <div id="reiniciar">
+                <button name="reiniciar" id="boton-reiniciar">Reiniciar</button>
+            </div>
+        </div>
+
+        <div class="ataques">
+            <div class="columnas-de-grid">
+                <p class="victorias" id="victorias-jugador"></p>
+                <p class="nombre-de-mascotas" id="mascota-jugador"></p>
+                <div id="ataque-del-jugador"></div>
+            </div>
+
+            <div class="columnas-de-grid">
+                <p class="victorias" id="victorias-enemigo"></p>
+                <p class="nombre-de-mascotas" id="mascota-enemigo"></p>
+                <div id="ataque-del-enemigo"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p id="parrafo">Gracias, <a href="https://platzi.com/r/AntonioDelgadOficial" target="_blank">Platzi</a>💚 por
+            esta excelente
+            iniciativa. <em><a href="https://platzi.com/r/AntonioDelgadOficial" target="_blank">¡Entra ya y nunca pares
+                    de aprender!</a></em>.<br>
+            Sitio web realizado por <a href="https://akrosoficial1.github.io/antoniodelgado/">Antonio Delgado</a>. |
+            <a href="mailto:antonioldh76@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=584166077009" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/akrosoficial1/" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/antoniodelgadoficial/" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/antonioficial10" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-twitter"></i></a>
+        </p>
+    </footer>
+
+    <!--SCRIPTS CUSTOM-->
+    <script src="js/codigo.js"></script>
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/d9da9f40ba.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
