@@ -16,7 +16,7 @@
     </header>
 
     <section id="menu-principal">
-        <button class="boton" id="boton-instrucciones">Instrucciones del Juego</button><br>
+        <button class="boton" id="boton-instrucciones">INSTRUCCIONES <i class="fa-solid fa-tag"></i></button><br>
         <button class="boton" onclick="nuevaPartida()">Nueva Partida 🚀</button>
         <button class="boton" id="jugar-online" onclick="">Jugar Online 🏆</button>
 
@@ -33,7 +33,7 @@
         <div class="tarjetas" id="contenedor-tarjetas"></div>
 
         <div class="botones-de-seleccion">
-            <button class="boton" onclick="reiniciarJuego()">Atrás</button>
+            <button class="boton" onclick="reiniciarJuego()">Atrás <i class="fa-solid fa-reply"></i></button>
             <button class="boton" id="boton-mascota">Seleccionar</button>
         </div>
     </section>
@@ -44,15 +44,15 @@
         <canvas id="mapa"></canvas>
 
         <button class="boton" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()"
-            ontouchstart="moverArriba()" onmousedown="moverArriba()" id="boton-arriba">Arriba</button>
+            ontouchstart="moverArriba()" onmousedown="moverArriba()" id="boton-arriba">🢁</button>
 
         <div id="botones-restantes">
             <button class="boton" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="moverIzquierda()"
-                onmousedown="moverIzquierda()">Izquierda</button>
+                onmousedown="moverIzquierda()">🢀</button>
             <button class="boton" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="moverAbajo()"
-                onmousedown="moverAbajo()">Abajo</button>
+                onmousedown="moverAbajo()">🢃</button>
             <button class="boton" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="moverDerecha()"
-                onmousedown="moverDerecha()">Derecha</button>
+                onmousedown="moverDerecha()">🢂</button>
         </div>
 
     </section>

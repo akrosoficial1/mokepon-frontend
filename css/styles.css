@@ -67,6 +67,10 @@ body {
     display: none;
 }
 
+button {
+    user-select: none;
+}
+
 .boton {
     padding: 0;
     margin: 5px 0;
@@ -111,6 +115,7 @@ body {
 .tarjetas-ataques {
     display: flex;
     gap: 10px;
+    user-select: none;
 }
 
 .tarjetas-de-mokepon {
