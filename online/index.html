@@ -15,17 +15,6 @@
         <p id="mensaje">¡El mejor juego online! Juega ahora</p>
     </header>
 
-    <section id="menu-principal">
-        <button class="boton" id="boton-instrucciones">INSTRUCCIONES <i class="fa-solid fa-tag"></i></button><br>
-        <button class="boton" onclick="nuevaPartida()">Nueva Partida 🚀</button>
-        <a href="./online/index.html"><button class="boton" id="jugar-online" onclick="">Jugar Online 🏆</button></a>
-
-        <p id="instrucciones">En mokepon podrás divertirte jugando con otras personas en línea o con un bot. Para
-            iniciar deber seleccionar un modo de juego, luego elegir tu Mokepon para luego colisionar con otro jugador e
-            iniciar
-            la batalla. ¡Selecciona ya tu modo de jugar! ¿Qué esperas para ir a la batalla?</p>
-    </section>
-
     <section id="seleccionar-mascotas">
 
         <h2 class="subtitulos">Elige tu mascota:</h2>
@@ -33,9 +22,10 @@
         <div class="tarjetas" id="contenedor-tarjetas"></div>
 
         <div class="botones-de-seleccion">
-            <button class="boton" onclick="reiniciarJuego()">Atrás <i class="fa-solid fa-reply"></i></button>
+            <a href="../index.html"><button class="boton">Atrás <i class="fa-solid fa-reply"></i></button></a>
             <button class="boton" id="boton-mascota">Seleccionar</button>
         </div>
+
     </section>
 
     <section id="ver-mapa">
@@ -71,7 +61,7 @@
             <p id="parrafo-resultado">¡Que comience el juego!</p>
 
             <div id="reiniciar">
-                <button name="reiniciar" id="boton-reiniciar">Reiniciar</button>
+                <a href="../index.html"><button name="reiniciar" id="boton-reiniciar">Reiniciar</button></a>
             </div>
         </div>
 
